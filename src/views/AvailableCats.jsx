@@ -11,6 +11,8 @@ const availableCats = [
 
 export default function AvailableCats() {
   const [cats, setCats] = useState([]);
+  const[searchText, setSearchText]=useState('');
+  const[selectedBreed,setSelectedBreed]=useState('All');
 
   useEffect(() => {
     // Fetch cat images from an API endpoint and assign it to the featuredCats list
