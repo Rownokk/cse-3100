@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import './BaseLayout.css'; // Import your custom CSS file
+import './BaseLayout.css'; // CSS file
 
 const BaseLayout = () => (
   <div className="layout">
