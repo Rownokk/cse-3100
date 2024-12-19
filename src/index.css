@@ -1,9 +1,46 @@
+/* Navigation Bar Styles */
+nav {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  background-color: #ffe4e1; 
+  padding: 10px 0; 
+}
+
+/* Navigation Links */
+nav a {
+  text-decoration: none; 
+  color: #333; 
+  padding: 10px 15px; 
+  margin: 0 10px; 
+  border-radius: 5px; 
+  font-weight: bold; 
+  transition: all 0.3s ease; 
+}
+
+/* Special style for the first link (Purrfect Adoption) */
+nav a:first-of-type {
+  background-color: #ffcccb; 
+  padding: 10px 0; 
+  margin: 0 10px; 
+  border-radius: 0; 
+  font-weight: bold; 
+}
+
+/* Hover Effect */
+nav a:hover {
+  background-color: #ff8c8c; 
+  color: white; 
+  transform: scale(1.05); 
+  text-decoration: none; 
+}
+
 /* General Layout */
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
   background-color: #f9f9f9;
 }
 
@@ -16,30 +53,27 @@ header {
   padding: 1em 2em;
   border-bottom: 1px solid #ddd;
 }
-
+.mt-5 h2{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color:crimson;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #8b0000; 
+}
+header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color:crimson; 
+}
 header h1 a {
   text-decoration: none;
   color: #333;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5em;
-  margin: 0;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #555;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-  color: #007bff;
 }
 
 /* Footer */
@@ -120,15 +154,15 @@ main {
 .filters-section .form-select:focus,
 .filters-section .form-control:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  border-color: #ff8c8c;
+  box-shadow: 0 0 4px rgba(255, 140, 140, 0.5);
 }
 
 .filters-section button {
   padding: 0.75em 1.5em;
   font-size: 1rem;
   color: #fff;
-  background-color: #007bff;
+  background-color: #ff8c8c;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -136,7 +170,7 @@ main {
 }
 
 .filters-section button:hover {
-  background-color: #0056b3;
+  background-color: #ff6f6f;
 }
 
 /* Contact Us Section */
@@ -185,15 +219,15 @@ main {
 .contact-us input:focus,
 .contact-us textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  border-color: #ff8c8c;
+  box-shadow: 0 0 4px rgba(255, 140, 140, 0.5);
 }
 
 .contact-us button {
   padding: 0.75em 1.5em;
   font-size: 1rem;
   color: #fff;
-  background-color: #007bff;
+  background-color: #ff8c8c;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -201,7 +235,7 @@ main {
 }
 
 .contact-us button:hover {
-  background-color: #0056b3;
+  background-color: #ff6f6f;
 }
 
 /* About Us Section */
@@ -230,7 +264,7 @@ main {
 }
 
 .about-us .highlight {
-  color: #007bff;
+  color: #ff8c8c;
   font-weight: bold;
 }
 
@@ -270,6 +304,10 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  header nav ul {
+    gap: 0.5em;
+  }
+
   .row {
     flex-direction: column;
     align-items: center;
@@ -300,21 +338,5 @@ main {
 
   .student-info h3 {
     font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 576px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  footer {
-    font-size: 0.8rem;
   }
 }

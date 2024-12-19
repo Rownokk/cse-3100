@@ -33,8 +33,9 @@ export default function Home() {
       <section className="text-center mt-4">
         <h2>Welcome to Purrfect Adoption</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc
+        Welcome to Purrfect Adoption! Discover your new feline friend today and give them a loving home. Join our community of cat enthusiasts!
+
+
         </p>
       </section>
 

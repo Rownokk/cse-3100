@@ -1,9 +1,10 @@
 import { Link, Outlet } from 'react-router-dom';
+import './BaseLayout.css'; // Import your custom CSS file
 
 const BaseLayout = () => (
   <div className="layout">
     <header>
-      <Link to="/">Purrfect Adoption</Link>
+      <Link to="/" className="logo">Purrfect Adoption</Link>
       <nav>
         <Link to="/available-cats">Available Cats</Link>
         <Link to="/contact-us">Contact Us</Link>
