@@ -340,3 +340,42 @@ main {
     font-size: 1.4rem;
   }
 }
+
+
+.intro, .closing {
+  margin-bottom: 20px;
+}
+
+.team-section {
+  margin-top: 40px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: crimson;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #333;
+}

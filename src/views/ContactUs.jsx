@@ -23,19 +23,28 @@ export default function ContactUs() {
           placeholder="Enter your email" 
           required // This field is mandatory
         />
+        <label htmlFor="phone">Phone no:</label>
+        <input 
+          type="phone" 
+          id="phone" 
+          name="phone" 
+          placeholder="Enter your phone no" 
+          required // This field is mandatory
+        />
+
 
         {/* Textarea for the user's message */}
         <label htmlFor="message">Message:</label>
         <textarea 
           id="message" 
           name="message" 
-          rows="4" 
+          rows="2" 
           placeholder="Write your message here..." 
           required // This field is mandatory
         ></textarea>
 
         {/* Submit button to send the message */}
-        <button type="submit">Send Message</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   );
